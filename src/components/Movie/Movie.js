@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "../Image";
-import MovieInfo from "../MovieInfo/MovieInfo";
-import MovieAdditionalInfo from "../MovieAdditionalInfo/MovieAdditionalInfo";
+import MovieInfo from "./MovieInfo/MovieInfo";
+import {MovieAdditionalInfo} from "./MovieAdditionalInfo/MovieAdditionalInfo";
 import styles from "./Movie.module.css";
 
 const Movie = ({

@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
 import Movie from "../../components/Movie/Movie";
-import MovieCastPage from "../MovieCastPage/MovieCastPage";
-import MovieReviewsPage from "../MovieReviewsPage";
-import NotFound from "../../Pages/NotfoundPage/NotFoundPage";
+import MovieCast from "../../components/Movie/MovieCast/MovieCast";
+import MovieReviews from "../../components/Movie/MovieReviews";
+import NotFound from "../NotfoundPage/NotFoundPage";
 import moviesApiServices from "../../services/movies-api-service";
 import Spinner from "../../components/Spinner";
 import routes from "../../routes";
 import styles from "./MovieDetailsPage.module.css";
-// import { UtilsService } from "utils/utils";
 import formatDate from "../../utils/formatDate";
 
 export default class MovieDetailsPage extends Component {
@@ -76,10 +75,10 @@ export default class MovieDetailsPage extends Component {
                   linkCast={`${match.url}/cast`}
                   linkReviews={`${match.url}/reviews`}
                 />
-                <Route path={`${match.path}/cast`} component={MovieCastPage} />
+                <Route path={`${match.path}/cast`} component={MovieCast} />
                 <Route
                   path={`${match.path}/reviews`}
-                  component={MovieReviewsPage}
+                  component={MovieReviews}
                 />
               </div>
             )}

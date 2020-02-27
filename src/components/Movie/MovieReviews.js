@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import MovieReviewsList from "../components/MovieReviewsList/MovieReviewsList";
-import moviesApiServices from "../services/movies-api-service";
-import Spinner from "../components/Spinner";
+import MovieReviewsList from "./MovieReviewsList/MovieReviewsList";
+import moviesApiServices from "../../services/movies-api-service";
+import Spinner from "../Spinner";
 
 export default class MovieReviewsPage extends Component {
   state = {

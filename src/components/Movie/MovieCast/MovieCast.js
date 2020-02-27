@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import Image from "../../components/Image";
-import moviesApiServices from "../../services/movies-api-service";
-import Spinner from "../../components/Spinner";
-import styles from "./MovieCastPage.module.css";
+import Image from "../../Image";
+import moviesApiServices from "../../../services/movies-api-service";
+import Spinner from "../../Spinner";
+import styles from "./MovieCast.module.css";
 
-export default class MovieCastPage extends Component {
+export default class MovieCast extends Component {
   state = {
     loading: true,
     error: null,

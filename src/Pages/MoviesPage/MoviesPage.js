@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import {MoviesListWithRouter} from '../../components/MoviesList/MoviesList'
 import getQueryParams from "../../utils/getQueryParams";
 import Searchbar from "../../components/Searchbar/Searchbar";
 import moviesApiServices from "../../services/movies-api-service";
 import Spinner from "../../components/Spinner";
-import styles from "../MoviesPage/MoviesPage.module.css";
 
 export default class MoviesPage extends Component {
   state = {
@@ -52,8 +51,6 @@ export default class MoviesPage extends Component {
 
   render() {
     const { movies, loading } = this.state;
-    const { match, location } = this.props;
-
     return (
       <>
         {loading ? (
@@ -62,22 +59,7 @@ export default class MoviesPage extends Component {
           <div>
             <h2>Movies Page</h2>
             <Searchbar onSearch={this.setSearchQuery} />
-            <ul className={styles.moviesList}>
-              {movies &&
-                movies.map(movie => (
-                  <li key={movie.id}>
-                    <Link
-                      className={styles.movieLink}
-                      to={{
-                        pathname: `${match.url}/${movie.id}`,
-                        state: { from: location }
-                      }}
-                    >
-                      {movie.title}
-                    </Link>
-                  </li>
-                ))}
-            </ul>
+            <MoviesListWithRouter movies={movies}></MoviesListWithRouter>    
           </div>
         )}
       </>
