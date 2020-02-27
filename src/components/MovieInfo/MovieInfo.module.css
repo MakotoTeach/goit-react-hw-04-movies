@@ -1,0 +1,14 @@
+.info{
+  padding: 10px;
+}
+
+.genresList{
+  padding: 0px;
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+
+}
+.genresListItem{
+  padding-right: 4px;
+}

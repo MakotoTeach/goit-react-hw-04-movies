@@ -1,0 +1,7 @@
+.moviesList {
+  list-style: none;
+}
+
+.movieLink {
+  composes: movieLink from "../../styles/movieLink.css";
+}

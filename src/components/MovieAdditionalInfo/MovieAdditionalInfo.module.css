@@ -1,0 +1,14 @@
+.additionalInfo{
+  border-bottom: 2px solid rgba(0, 0, 0, 0.199);
+}
+.additionalInfoList {
+  list-style: none;
+}
+.listItem {
+  font-size: 18px;
+  font-weight: 500;
+}
+.itemLink {
+  color: rgba(0, 0, 0, 0.815);
+  text-decoration: none;
+}

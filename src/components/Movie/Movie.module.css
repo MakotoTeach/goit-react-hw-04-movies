@@ -1,0 +1,9 @@
+.movieDetails {
+  display: flex;
+  flex-direction: row;
+}
+
+.movieDetails {
+  padding:0px 0 30px 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.199);
+}

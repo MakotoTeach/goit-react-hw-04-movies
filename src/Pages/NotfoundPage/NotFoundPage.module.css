@@ -1,0 +1,17 @@
+.container {
+  text-align: center;
+}
+.status {
+  margin: 0;
+  padding: 25px;
+  font-size: 64px;
+  line-height: 96px;
+}
+.massage {
+  font-size: 20px;
+  font-weight: 500;
+}
+.link {
+  text-decoration: none;
+  color: rgb(226, 43, 195);
+}

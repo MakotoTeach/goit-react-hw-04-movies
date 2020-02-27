@@ -1,0 +1,10 @@
+.castList{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.castListItem{
+  width: 170px;
+  text-align: center;
+}

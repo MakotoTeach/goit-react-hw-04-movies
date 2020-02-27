@@ -1,0 +1,8 @@
+.movieLink {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.815);
+  text-decoration: none;
+}
+.movieLink:active{
+  color: rgb(226, 43, 195);
+}
